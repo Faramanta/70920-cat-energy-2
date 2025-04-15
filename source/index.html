@@ -11,8 +11,9 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="images/logo.svg" width="33" height="38" alt="Кэт энерджи">
+    <a class="main-header__logo logo" href="#">
+      <img class="logo__icon" src="images/logo-icon.svg" width="33" height="38" alt="Иконка Кэт энерджи">
+      <img class="logo__name" src="images/logo-name.svg" width="101" height="18" alt="Название Кэт энерджи">
     </a>
 
     <nav class="main-nav">
@@ -43,7 +44,7 @@
       <div class="banner__wrapper">
         <h2 class="banner__title">Функциональное питание для котов</h2>
         <p class="banner__slogan">Занялся собой? Займись котом!</p>
-        <img src="images/banner-image" width="280" height="270" alt="Функциональное питание для котов">
+        <img class="banner__image" src="images/banner-image.png" width="280" height="270" alt="Функциональное питание для котов">
         <a class="banner__button button" href="#">подобрать программу</a>
       </div>
     </section>
@@ -51,17 +52,15 @@
     <section class="programs">
       <div class="programs__wrapper">
         <ul class="programs__list">
-          <li class="programs__item">
-            <div class="programs__icon"></div>
-            <h3 class="programs__title">Похудение</h3>
-            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="catalog.html">каталог slim</a>
+          <li class="programs__item program">
+            <h3 class="program__title">Похудение</h3>
+            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program__link" href="catalog.html">каталог slim</a>
           </li>
-          <li class="programs__item">
-            <div class="programs__icon"></div>
-            <h3 class="programs__title">Набор массы</h3>
-            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="catalog.html">каталог pro</a>
+          <li class="programs__item program">
+            <h3 class="program__title">Набор массы</h3>
+            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program__link" href="catalog.html">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -72,19 +71,15 @@
         <h2 class="about__title">Как это работает</h2>
         <ul class="about__list about-list">
           <li class="about-list__item about-item">
-            <img class="about-item__image" src="images/icon-leaf" width="60" height="60" alt="">
             <p class="about-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="about-list__item about-item">
-            <img class="about-item__image" src="images/icon-powder" width="60" height="60" alt="">
             <p class="about-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="about-list__item about-item">
-            <img class="about-item__image" src="images/icon-eat" width="60" height="60" alt="">
             <p class="about-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="about-list__item about-item">
-            <img class="about-item__image" src="images/icon-clock" width="60" height="60" alt="">
             <p class="about-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -119,7 +114,7 @@
           <div class="sample-slider__slide">
             <img class="sample-slider__image" src="images/cat-after.png" width="280" height="256" alt="Стало">
           </div>
-          <div class="sample-slider__thumb"></div>
+          <button class="sample-slider__thumb" type="button">Сравнить</button>
         </div>
       </div>
     </section>
@@ -129,8 +124,8 @@
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
+          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span>
         </p>
       </div>
 
@@ -143,25 +138,25 @@
 
   <footer class="main-footer">
     <div class="main-footer wrapper">
-      <a class="main-footer__logo" href="#">
-        <img src="images/logo-footer.jpg" width="128" height="24" alt="Кэт энерджи">
+      <a class="main-footer__logo logo" href="#">
+        <img class="logo__name" src="images/logo-name.svg" width="128" height="24" alt="Название Кэт энерджи">
       </a>
 
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV">Мы в Ютубе</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">Мы в Телеграмм</a>
+            <a class="social__link social__link--telegram" href="https://htmlacademy.t.me/">Мы в Телеграмм</a>
           </li>
         </ul>
       </div>
 
-      <a class="main-footer__copyright copyright" href="#">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
         <img class="copyright__icon" src="images/copyright.png" width="27" height="34" alt="HTML Academy">
       </a>
