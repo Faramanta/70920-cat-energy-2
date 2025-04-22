@@ -6,14 +6,25 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <img class="logo__icon" src="images/logo-icon.svg" width="33" height="38" alt="Иконка Кэт энерджи">
-      <img class="logo__name" src="images/logo-name.svg" width="101" height="18" alt="Название Кэт энерджи">
+    <a class="main-header__logo logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Иконка Кэт энерджи">
+      </picture>
+      <picture>
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-name.svg">
+        <img class="logo__name" src="images/logo-name.svg" width="101" height="18" alt="Название Кэт энерджи">
+      </picture>
     </a>
 
     <nav class="main-nav">
@@ -44,7 +55,12 @@
       <div class="banner__wrapper">
         <h2 class="banner__title">Функциональное питание для котов</h2>
         <p class="banner__slogan">Занялся собой? Займись котом!</p>
-        <img class="banner__image" src="images/banner-image.png" width="280" height="270" alt="Функциональное питание для котов">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/banner/banner-desktop@1x.png 1x, images/banner/banner-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/banner/banner-tablet@1x.png 1x, images/banner/banner-tablet@2x.png 2x">
+          <img class="banner__image" src="images/banner/banner-mobile@1x.png" srcset="images/banner/banner-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов">
+        </picture>
+
         <a class="banner__button button" href="#">подобрать программу</a>
       </div>
     </section>
@@ -109,10 +125,16 @@
 
         <div class="sample__slider sample-slider">
           <div class="sample-slider__slide">
-            <img class="sample-slider__image" src="images/cat-before.png" width="280" height="256" alt="Было">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-tablet@1x.png 1x, images/slider/slider-before-tablet@2x.png 2x">
+              <img class="sample-slider__image" src="images/slider/slider-before-mobile@1x.png" srcset="images/slider/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Было">
+            </picture>
           </div>
           <div class="sample-slider__slide">
-            <img class="sample-slider__image" src="images/cat-after.png" width="280" height="256" alt="Стало">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-tablet@1x.png 1x, images/slider/slider-after-tablet@2x.png 2x">
+              <img class="sample-slider__image" src="images/slider/slider-after-mobile@1x.png" srcset="images/slider/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Стало">
+            </picture>
           </div>
           <button class="sample-slider__thumb" type="button">Сравнить</button>
         </div>
@@ -130,7 +152,11 @@
       </div>
 
       <div class="contacts__map map">
-        <img class="map__image" src="images/map.jpg" width="320" height="362" alt="Карта">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+          <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
 
