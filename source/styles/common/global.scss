@@ -1,1 +1,25 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $primary-font;
+  color: $bace-color-text;
+}
+
+h2 {
+  font-family: "Oswald", serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $title-color-text;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.button {
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  color: $white;
+}
+
+.button--secondary {
+  background-color: $basic-grey;
+  color: $bace-color-text;
+}
