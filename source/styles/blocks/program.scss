@@ -1,0 +1,23 @@
+.program__title {
+  font-family: "Oswald", serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $title-color-text;
+}
+
+.program__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__link {
+  font-family: "Oswald", serif;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $title-color-text;
+}
