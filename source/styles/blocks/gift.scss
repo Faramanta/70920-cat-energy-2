@@ -1,6 +1,12 @@
 .gift {
   font-size: 16px;
   line-height: 20px;
-  color: $white;
-  background-color: $basic-green;
+  color: $accent-color-text;
+  background-color: $accent-color;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/bg-gift-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
