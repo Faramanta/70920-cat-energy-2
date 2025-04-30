@@ -1,0 +1,12 @@
+.subscribe-form__input {
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: $bace-color-text;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $bace-color-text;
+  }
+}

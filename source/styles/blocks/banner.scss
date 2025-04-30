@@ -1,19 +1,27 @@
 .banner {
   text-align: center;
-  background-color: $basic-green;
+  background-color: $accent-color;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/banner/banner-bg-mobile@1x.jpg"),
+    linear-gradient(to right, #4f4e54, #424147);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .banner__title {
+  font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $white;
+  color: $accent-color-text;
 }
 
+
 .banner__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $title-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: $white;
+  color: $accent-color-text;
 }
