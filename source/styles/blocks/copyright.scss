@@ -1,17 +1,14 @@
 .copyright {
-  position: relative;
-  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: $bace-color-text;
 
   &::after {
-    position: absolute;
     content: "";
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
     width: 27px;
     height: 34px;
     mask: url("../../icons/stack.svg#logo-htmlacademy");
