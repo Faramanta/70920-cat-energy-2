@@ -1,0 +1,45 @@
+.sample-slider {
+  position: relative;
+}
+
+.sample-slider__thumb {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 5px;
+  height: 100%;
+  padding: 0;
+  font-size: 0;
+  background: #666666;
+  border-radius: 2px;
+  border-style: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    mask: url("../../icons/stack.svg#arrows");
+    mask-size: 24px auto;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    background: $accent-color-text;
+  }
+}

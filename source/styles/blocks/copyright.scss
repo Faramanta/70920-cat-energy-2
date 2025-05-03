@@ -1,6 +1,36 @@
 .copyright {
+  position: relative;
+  padding-right: 50px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: $bace-color-text;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 27px;
+    height: 34px;
+    mask: url("../../icons/stack.svg#logo-htmlacademy");
+    background-color: $icon-color;
+    mask-size: 27px auto;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $accent-color;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+
+    &::after {
+      background-color: $accent-color;
+    }
+  }
 }
