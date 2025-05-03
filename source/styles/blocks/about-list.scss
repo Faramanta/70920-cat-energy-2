@@ -1,4 +1,45 @@
 .about-list__item-description {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-size: 14px;
   line-height: 18px;
+
+  &::before {
+    flex: none;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $accent-color;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--first {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon_leaf");
+      background-size: 30px 32px;
+    }
+  }
+
+  &--second {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon_cup");
+      background-size: 26px 29px;
+    }
+  }
+
+  &--third {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon_eat");
+      background-size: 25px 30px;
+    }
+  }
+
+  &--fourth {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon_watch");
+      background-size: 26px 31px;
+    }
+  }
 }

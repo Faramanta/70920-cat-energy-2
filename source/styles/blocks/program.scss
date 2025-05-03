@@ -59,7 +59,9 @@
 }
 
 .program__link {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   padding-right: 47px;
   font-family: $title-font;
   font-size: 20px;
@@ -69,23 +71,17 @@
   color: $title-color-text;
 
   &::after {
-    position: absolute;
     content: "";
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
     width: 24px;
-    height: 10px;
-    background-image: url("../../icons/stack.svg#arrow-right");
+    height: 12px;
+    background-image: url("../../icons/stack.svg#arrow-right-long");
     background-repeat: no-repeat;
   }
 
   &:hover {
     &::after {
-      right: 0;
       width: 32px;
-      height: 10px;
-      background-image: url("../../icons/stack.svg#arrow-right-long");
+      transition: width 0.3s;
     }
   }
 

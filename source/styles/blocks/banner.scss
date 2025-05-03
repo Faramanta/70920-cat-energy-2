@@ -1,15 +1,23 @@
 .banner {
+  padding: 27px 35px;
   text-align: center;
-  background-color: $accent-color;
   background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px),
     url("../../images/banner/banner-bg-mobile@1x.jpg"),
     linear-gradient(to right, #4f4e54, #424147);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top;
+  background-size: 100%, auto, 99% 99%;
+}
+
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner__title {
+  margin: 0;
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;

@@ -333,7 +333,7 @@
       <p class="promotions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="promotions__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="email"></label>
-        <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+        <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
         <button class="subscribe-form__button button" type="submit">Подписаться</button>
       </form>
     </section>
@@ -367,20 +367,25 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://htmlacademy.t.me/">Мы в Телеграмм</a>
+            <a class="social__link social__link--telegram" href="https://htmlacademy.t.me/">
+              <span class="visually-hidden">Мы в Телеграмм</span>
+            </a>
           </li>
         </ul>
       </div>
 
       <a class="main-footer__copyright copyright" href="#">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__icon" src="images/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
   </footer>
