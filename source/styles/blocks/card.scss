@@ -1,6 +1,10 @@
 .card {
   &--more {
     text-align: center;
+    background-image: url("../../icons/stack.svg#icon_plus");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50% 0;
   }
 }
 
