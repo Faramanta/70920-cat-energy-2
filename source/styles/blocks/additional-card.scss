@@ -1,3 +1,24 @@
+.additional-card {
+  padding: 12px 0 19px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border: 1px solid $border-color;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    gap: 40px;
+    align-items: center;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
 .additional-card__title {
   font-family: $title-font;
   font-size: 16px;
@@ -8,6 +29,15 @@
 }
 
 .additional-card__properties {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
+}
+
+.additional-card__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

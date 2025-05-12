@@ -1,3 +1,12 @@
+.labels {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 43px;
+  }
+}
+
 .labels__title {
   font-family: $title-font;
   font-size: 24px;

@@ -1,5 +1,32 @@
 .sample-slider {
   position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.sample-slider__slide {
+  overflow: hidden;
+}
+
+.sample-slider__slide--after {
+  .sample-slider__image {
+    margin-left: -140px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -280px;
+    }
+  }
 }
 
 .sample-slider__thumb {

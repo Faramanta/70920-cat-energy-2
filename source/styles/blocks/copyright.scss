@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -29,5 +30,9 @@
     &::after {
       background-color: $accent-color;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
   }
 }

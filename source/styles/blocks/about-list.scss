@@ -1,3 +1,25 @@
+.about-list {
+  @include no-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: initial;
+    justify-content: space-between;
+  }
+}
+
+.about-list__item {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
 .about-list__item-description {
   display: flex;
   align-items: center;
@@ -41,5 +63,10 @@
       background-image: url("../../icons/stack.svg#icon_watch");
       background-size: 26px 31px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
