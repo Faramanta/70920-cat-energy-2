@@ -1,5 +1,6 @@
 .banner {
-  padding: 27px 35px;
+  position: relative;
+  padding: 27px 35px 0;
   text-align: center;
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px),
@@ -8,12 +9,29 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%, auto, 99% 99%;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding: 65px 30px 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -112px 0 82px;
+    padding: 224px 30px 184px;
+    background-image:
+      linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%),
+      url("../../images/banner/banner-bg-desktop@1x.jpg");
+    background-size: 100%, auto 100%;
+    background-position: center, center;
+  }
 }
 
 .banner__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    max-width: 414px;
+    text-align: left;
+  }
 }
 
 .banner__title {
@@ -23,6 +41,11 @@
   line-height: 36px;
   font-weight: 400;
   color: $accent-color-text;
+
+
+  @media (min-width: $tablet-width) {
+    color: $title-color-text;
+  }
 }
 
 
@@ -32,4 +55,37 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $accent-color-text;
+
+
+  @media (min-width: $tablet-width) {
+    color: $title-color-text;
+  }
+}
+
+.banner__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 21px);
+    margin: 0;
+    width: 100%;
+    height: auto;
+    max-width: 709px;
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      z-index: 1;
+      right: 447px;
+      top: 143px;
+      transform: none;
+    }
+  }
+}
+
+.banner__button {
+  @media (min-width: $tablet-width) {
+
+  }
 }

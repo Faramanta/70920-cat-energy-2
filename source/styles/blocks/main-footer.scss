@@ -1,3 +1,26 @@
 .main-footer {
+  padding: 20px;
   background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 30px;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
