@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 37px 153px;
+    gap: 37px 137px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
 
 .about-list__item {
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 246px;
   }
 }
 

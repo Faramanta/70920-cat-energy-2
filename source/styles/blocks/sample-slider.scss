@@ -21,11 +21,7 @@
 
 .sample-slider__slide--after {
   .sample-slider__image {
-    margin-left: -140px;
-
-    @media (min-width: $tablet-width) {
-      margin-left: -280px;
-    }
+    transform: translateX(-50%);
   }
 }
 
@@ -33,7 +29,7 @@
   position: absolute;
   top: 0;
   right: 50%;
-  width: 5px;
+  width: 4px;
   height: 100%;
   padding: 0;
   font-size: 0;

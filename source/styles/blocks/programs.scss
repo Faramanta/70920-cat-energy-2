@@ -1,19 +1,17 @@
 .programs {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 30px;
+  }
 }
 
 .programs__list {
   @include no-list;
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    gap: 30px;
-  }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
     gap: 80px;
     max-width: 1220px;
