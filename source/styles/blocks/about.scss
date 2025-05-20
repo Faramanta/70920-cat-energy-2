@@ -1,12 +1,26 @@
 .about {
-  padding: 20px;
+  padding: 20px 20px 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 30px;
+    padding: 45px 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 30px 69px;
+    border-bottom: none;
   }
 }
 
 .about__wrapper {
   max-width: 1220px;
   margin: 0 auto;
+}
+
+.about__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }

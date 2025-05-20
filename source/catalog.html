@@ -33,10 +33,10 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+            <a class="main-nav__link " href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--active" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Подбор программы</a>
@@ -292,7 +292,11 @@
     </section>
 
     <section class="additionals">
-      <h2 class="additionals__title subtitle">Дополнительные товары</h2>
+      <h2 class="additionals__title subtitle">
+        <span class="subtitle__wrapper">
+          <span class="subtitle__txt">Дополнительные товары</span>
+        </span>
+      </h2>
       <div class="additionals__wrapper">
         <div class="additionals__list">
           <article class="additionals__item additional-card">
@@ -347,13 +351,19 @@
     </section>
 
     <section class="promotions">
-      <h2 class="promotions__title subtitle">Акции и новинки</h2>
-      <p class="promotions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="promotions__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="email"></label>
-        <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-        <button class="subscribe-form__button button" type="submit">Подписаться</button>
-      </form>
+      <h2 class="promotions__title subtitle">
+        <span class="subtitle__wrapper">
+          <span class="subtitle__txt">Акции и новинки</span>
+        </span>
+      </h2>
+      <div class="promotions__wrapper">
+        <p class="promotions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="promotions__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="email"></label>
+          <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          <button class="subscribe-form__button button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
 
     <section class="contacts contacts--catalog">

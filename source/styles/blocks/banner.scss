@@ -11,31 +11,30 @@
   background-size: 100%, auto, 99% 99%;
 
   @media (min-width: $tablet-width) {
+    padding: 35px 30px 526px;
     background-image: none;
-    padding: 65px 30px 526px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -112px 0 82px;
-    padding: 224px 30px 184px;
-    background-image:
-      linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%),
-      url("../../images/banner/banner-bg-desktop@1x.jpg");
-    background-size: 100%, auto 100%;
-    background-position: center, center;
+    min-height: 550px;
+    padding: 29px 30px 82px;
   }
 }
 
 .banner__wrapper {
   @media (min-width: $tablet-width) {
-    margin-left: 90px;
-    max-width: 414px;
-    text-align: left;
+    max-width: 528px;
+    margin: 0 auto;
+    padding: 80px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
   }
 }
 
 .banner__title {
-  margin: 0;
+  margin-bottom: 25px;
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
@@ -44,42 +43,77 @@
 
 
   @media (min-width: $tablet-width) {
+    max-width: 420px;
+    margin: 0 0 40px 90px;
+    font-size: 60px;
+    line-height: 60px;
     color: $title-color-text;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
 
 .banner__slogan {
+  max-width: 420px;
+  margin-bottom: 29px;
   font-family: $title-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: left;
   color: $accent-color-text;
 
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 50px 90px;
+    font-size: 20px;
+    line-height: 20px;
     color: $title-color-text;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 80px;
+  }
+}
+
+.banner__button {
+  @media (min-width: $tablet-width) {
+    width: 242px;
+    box-sizing: border-box;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
 .banner__image {
+  display: block;
+  margin: 0 0 3px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    z-index: -1;
     bottom: 0;
     right: 50%;
     transform: translate(50%, 21px);
-    margin: 0;
+    z-index: -1;
     width: 100%;
     height: auto;
     max-width: 709px;
+    margin: 0;
 
     @media (min-width: $desktop-width) {
-      width: 552px;
-      z-index: 1;
-      right: 447px;
-      top: 143px;
+      right: auto;
+      left: calc(50% - 163px);
+      top: 30px;
       transform: none;
+      z-index: 1;
+      width: 552px;
     }
   }
 }

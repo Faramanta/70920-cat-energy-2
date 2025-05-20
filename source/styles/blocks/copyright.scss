@@ -13,9 +13,9 @@
     width: 27px;
     height: 34px;
     mask: url("../../icons/stack.svg#logo-htmlacademy");
-    background-color: $icon-color;
     mask-size: 27px auto;
     mask-repeat: no-repeat;
+    background-color: $icon-color;
   }
 
   &:hover {

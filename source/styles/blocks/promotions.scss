@@ -1,13 +1,43 @@
 .promotions {
-  padding: 40px 20px;
-  max-width: 1220px;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 0 104px;
+  }
+}
+
+.promotions__title {
+  margin: 0 0 32px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 72px;
+  }
+}
+
+.promotions__wrapper {
+  max-width: 632px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+  }
 }
 
 .promotions__description {
+  margin: 0 0 24px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: $title-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
