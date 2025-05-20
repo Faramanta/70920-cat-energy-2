@@ -1,22 +1,58 @@
 .labels {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 162px);
     column-gap: 43px;
   }
 }
 
+.labels__item {
+  position: relative;
+  padding: 14px 20px 17px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
 .labels__title {
+  margin: 0;
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: $title-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .labels__description {
+  position: absolute;
+  right: 50%;
+  bottom: -15px;
+  transform: translateX(50%);
+  margin: 0;
+  padding: 0 18px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    bottom: -6px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background: $accent-color-text;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: #f2f2f2;
+  }
 }

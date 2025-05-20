@@ -1,13 +1,49 @@
 .gift {
-  font-size: 16px;
-  line-height: 20px;
-  color: $accent-color-text;
+  padding: 187px 61px 43px 58px;
   background-color: $accent-color;
   background-image:
     url("../../icons/stack.svg#icon_gift"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../../images/bg-gift-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 78px, cover, cover;
+  background-position: center 59px, center, center;
+  background-size: 78px 80px, cover, cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 20px;
+    background-image:
+      url("../../icons/stack.svg#icon_gift"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/bg-gift-tablet@1x.jpg");
+    background-position: 77px center, center, center;
+    background-size: 80px 83px, cover, cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 184px 42px 43;
+    background-image:
+      url("../../icons/stack.svg#icon_gift"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/bg-gift-desktop@1x.png");
+    background-size: 80px 83px, cover, cover;
+    background-position: center 56px, center, center;
+  }
+}
+
+.gift__text {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: $accent-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    margin: 0 0 0 auto;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

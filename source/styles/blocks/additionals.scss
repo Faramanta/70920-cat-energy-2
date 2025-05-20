@@ -1,10 +1,28 @@
 .additionals {
-  padding: 25px 20px;
-  max-width: 1220px;
-  margin: 0 auto;
+  padding: 25px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 0 0;
+  }
+}
+
+.additionals__title {
+  margin: 0 0 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+  }
 }
 
 .additionals__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 244px;
@@ -13,5 +31,14 @@
 }
 
 .additionals__list {
+  margin-bottom: 35px;
   border-top: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

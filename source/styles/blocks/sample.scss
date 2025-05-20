@@ -1,27 +1,30 @@
 .sample {
   position: relative;
+  padding: 25px 20px 40px;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid #e6e6e6;
+    padding: 45px 0 101px;
     background-image: linear-gradient(to bottom, #ffffff 619px, $bg-color 619px);
   }
 
   @media (min-width: $desktop-width) {
-    border-top: none;
-    background-image: linear-gradient(to bottom, #ffffff 146px, $bg-color 146px);
+    padding: 0 0 75px;
+    background-image: linear-gradient(to bottom, #ffffff 23%, $bg-color 23%);
   }
 }
 
 .sample__wrapper {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0;
   }
 }
 
@@ -35,10 +38,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 436px;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
+    max-width: 436px;
+  }
+}
+
+.sample__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -49,17 +64,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.sample__labels {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
 .sample__description {
+  margin: 0 0 20px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px;
+  }
 }
 
 .sample__labels-wrapper {
@@ -71,20 +111,34 @@
 }
 
 .sample__total {
+  margin-bottom: 20px;
   font-family: $title-font;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: $title-color-text;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 0;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     column-gap: 63px;
+  }
+}
+
+.sample__total-label {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

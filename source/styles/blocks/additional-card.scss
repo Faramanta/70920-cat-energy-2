@@ -12,32 +12,56 @@
     display: grid;
     grid-template-columns: 1fr 244px;
     gap: 40px;
-    align-items: center;
     padding: 15px 0;
+    align-items: center;
     border-left: none;
     border-right: none;
   }
-}
-
-.additional-card__title {
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.additional-card__properties {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 14px;
 }
 
 .additional-card__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
+
+.additional-card__title {
+  margin: 0 0 13px;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additional-card__properties {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
