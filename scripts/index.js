@@ -1,0 +1,1 @@
+var t=document.querySelector(".main-nav__toggle"),n=document.querySelector(".main-nav__list");t.addEventListener("click",function(){this.classList.toggle("main-nav__toggle--active"),n.classList.toggle("main-nav__list--active")});
