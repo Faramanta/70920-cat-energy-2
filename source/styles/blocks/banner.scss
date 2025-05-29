@@ -1,7 +1,6 @@
 .banner {
   position: relative;
   padding: 27px 20px 0;
-  text-align: center;
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px),
     url("../../images/banner/banner-bg-mobile@1x.jpg"),
@@ -11,13 +10,13 @@
   background-size: 100%, auto, 99% 99%;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 30px 526px;
+    padding: 35px 30px 505px;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 550px;
-    padding: 29px 30px 82px;
+    min-height: 470px;
+    padding: 107px 30px 82px;
   }
 }
 
@@ -25,7 +24,7 @@
   @media (min-width: $tablet-width) {
     max-width: 528px;
     margin: 0 auto;
-    padding: 80px 0 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,17 +33,18 @@
 }
 
 .banner__title {
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-align: center;
   color: $accent-color-text;
 
 
   @media (min-width: $tablet-width) {
     max-width: 420px;
-    margin: 0 0 40px 90px;
+    margin: 0 0 40px;
     font-size: 60px;
     line-height: 60px;
     color: $title-color-text;
@@ -63,15 +63,16 @@
   font-family: $title-font;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
   text-transform: uppercase;
-  text-align: left;
   color: $accent-color-text;
 
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 50px 90px;
+    margin: 0 0 50px;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
     color: $title-color-text;
   }
 
@@ -84,7 +85,9 @@
   @media (min-width: $tablet-width) {
     width: 242px;
     box-sizing: border-box;
-    margin-left: 90px;
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +113,7 @@
     @media (min-width: $desktop-width) {
       right: auto;
       left: calc(50% - 163px);
-      top: 30px;
+      top: 26px;
       transform: none;
       z-index: 1;
       width: 552px;

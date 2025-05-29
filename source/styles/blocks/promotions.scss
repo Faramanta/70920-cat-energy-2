@@ -1,17 +1,23 @@
 .promotions {
-  padding: 40px 0;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 49px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 0;
+    padding: 93px 30px 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 0 104px;
+    padding: 113px 0 104px;
   }
 }
 
 .promotions__title {
-  margin: 0 0 32px;
+  margin: 0 0 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 66px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 72px;
@@ -21,7 +27,7 @@
 .promotions__wrapper {
   max-width: 632px;
   margin: 0 auto;
-  padding: 0 20px;
+  //padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     max-width: 752px;

@@ -11,48 +11,56 @@
 }
 
 .labels__item {
-  position: relative;
-  padding: 14px 20px 17px;
-  border: 1px solid #cdcdcd;
+  padding: 14px 5px 17px;
+  border: 1px solid $border-color;
   border-radius: 3px;
+
+
+  &:first-child {
+    .labels__description {
+      @media (min-width: $tablet-width) {
+        max-width: 124px;
+      }
+    }
+  }
 }
 
 .labels__title {
-  margin: 0;
+  margin: 0 0 8px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: $title-color-text;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 11px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .labels__description {
-  position: absolute;
-  right: 50%;
-  bottom: -15px;
-  transform: translateX(50%);
-  margin: 0;
-  padding: 0 18px;
+  max-width: 87px;
+  box-sizing: border-box;
+  margin: 0 auto -32px;
+  padding: 0 14px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  background: #f2f2f2;
+  background: $bg-color;
 
   @media (min-width: $tablet-width) {
-    bottom: -6px;
+    max-width: 146px;
     padding: 0 10px;
+    margin: 0 auto -24px;
     font-size: 14px;
     line-height: 14px;
     background: $accent-color-text;
-    white-space: nowrap;
   }
 
-  @media (min-width: $tablet-width) {
-    background: #f2f2f2;
+  @media (min-width: $desktop-width) {
+    background: $bg-color;
   }
 }

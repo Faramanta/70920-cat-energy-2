@@ -12,7 +12,8 @@
   background-color: $accent-color;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $accent-color-hover;
   }
 
@@ -24,5 +25,15 @@
   &--secondary {
     color: $bace-color-text;
     background-color: $bg-color;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: $bace-color-text;
+      background-color: #ebebeb;
+    }
   }
 }
