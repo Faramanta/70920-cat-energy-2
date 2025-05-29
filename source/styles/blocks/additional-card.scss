@@ -1,5 +1,5 @@
 .additional-card {
-  padding: 12px 0 19px;
+  padding: 13px 0 18px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 244px;
     gap: 40px;
-    padding: 15px 0;
+    padding: 15px 0 16px;
     align-items: center;
     border-left: none;
     border-right: none;
@@ -23,7 +23,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +55,9 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    gap: 30px;
     margin: 0;
     font-size: 16px;
     line-height: 20px;
@@ -65,3 +68,7 @@
   }
 }
 
+.additional-card__properties-value {
+  margin: 0;
+  text-align: right;
+}

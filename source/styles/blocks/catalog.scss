@@ -6,12 +6,12 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 40px 30px 0;
+    padding: 37px 30px 0;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 30px 0;
+    padding: 71px 30px 0;
     border-top: none;
   }
 }
@@ -37,7 +37,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 141px 60px;
+    gap: 140px 60px;
     padding: 81px 0 0;
     border-bottom: none;
   }

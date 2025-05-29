@@ -6,6 +6,8 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
@@ -26,12 +28,12 @@
       </a>
 
       <nav class="main-nav main-nav--index">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle " type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="main-nav__toggle-icon"></span>
         </button>
 
-        <ul class="main-nav__list">
+        <ul class="main-nav__list ">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
           </li>
@@ -146,19 +148,14 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper-inner">
         <h2 class="visually-hidden">Контакты</h2>
-
-        <div class="contacts__wrapper-inner">
-          <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">
-            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="contacts__city">Санкт-Петербург</span>
-          </p>
-        </div>
-
+        <p class="contacts__offer">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </p>
       </div>
-
       <div class="contacts__map map">
         <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">

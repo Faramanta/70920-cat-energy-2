@@ -11,8 +11,8 @@
 
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
     max-width: 1220px;
     margin: 0 auto;

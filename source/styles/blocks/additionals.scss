@@ -1,26 +1,36 @@
 .additionals {
-  padding: 25px 0 0;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 35px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 74px 0 0;
+    padding: 86px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 89px 30px 0;
   }
 }
 
 .additionals__title {
-  margin: 0 0 36px;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 79px;
+  }
 }
 
 .additionals__wrapper {
-  padding: 0 20px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 30px;
+    // max-width: 1220px;
+    //margin: 0 auto;
+    //padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
