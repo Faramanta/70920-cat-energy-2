@@ -57,7 +57,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       background-color: $accent-color;
     }

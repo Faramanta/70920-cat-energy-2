@@ -19,6 +19,17 @@
   overflow: hidden;
 }
 
+.sample-slider__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
 .sample-slider__slide--after {
   .sample-slider__image {
     transform: translateX(-50%);

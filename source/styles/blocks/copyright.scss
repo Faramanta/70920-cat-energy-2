@@ -18,7 +18,8 @@
     background-color: $icon-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       background-color: $accent-color;
     }
