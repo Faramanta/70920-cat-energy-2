@@ -4,7 +4,10 @@
   background-image:
     url("../../icons/stack.svg#icon_gift"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../images/bg-gift-mobile@1x.png");
+    image-set(
+      url("../../images/bg-gift-mobile@1x.png") 1x,
+      url("../../images/bg-gift-mobile@2x.png") 2x
+    );
   background-repeat: no-repeat;
   background-position: center 57px, center, center;
   background-size: 78px 80px, cover, cover;
@@ -14,7 +17,10 @@
     background-image:
       url("../../icons/stack.svg#icon_gift"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../images/bg-gift-tablet@1x.jpg");
+      image-set(
+        url("../../images/bg-gift-tablet@1x.jpg") 1x,
+        url("../../images/bg-gift-tablet@2x.jpg") 2x
+      );
     background-position: 77px center, center, center;
     background-size: 80px 83px, cover, cover;
   }
@@ -24,7 +30,10 @@
     background-image:
       url("../../icons/stack.svg#icon_gift"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../images/bg-gift-desktop@1x.png");
+      image-set(
+        url("../../images/bg-gift-desktop@1x.png") 1x,
+        url("../../images/bg-gift-desktop@2x.png") 2x
+      );
     background-size: 80px 83px, cover, cover;
     background-position: center 56px, center, center;
   }
